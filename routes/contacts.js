@@ -15,13 +15,6 @@ router.post('/contact', (req, res) => {
       res.json({success: true, msg: 'Email sent'});
     }
   });
-
-  // form.save().then(() => {
-  //   res.json({success: true, msg: 'Email sent'});
-  // }).catch((e) => {
-  //   res.json({success: false, msg: 'Failed to send email'});
-  //   res.status(400).send(e);
-  // });
 });
 
 module.exports = router;

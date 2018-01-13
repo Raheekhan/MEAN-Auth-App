@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
-// const ejs = require('ejs');
 
 const config = require('./config/database');
 
@@ -20,8 +19,6 @@ mongoose.connection.on('error', (err) => {
 
 const app = express();
 
-// const router = express.Router();
-
 const users = require('./routes/users');
 const contacts = require('./routes/contacts');
 
@@ -32,12 +29,8 @@ app.use(cors());
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Set EJS Engine
-// app.set('view engine', 'ejs');
-
 // Body Parser Middleware
 app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({extended: true}));
 
 // Passport Middleware
 app.use(passport.initialize());
