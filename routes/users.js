@@ -25,6 +25,27 @@ router.post('/register', (req, res, next) => {
   });
 });
 
+// router.put('/profile', (req, res, next) => {
+//   let updateUser = new User({
+//     name: req.body.name,
+//     email: req.body.email,
+//     username: req.body.username,
+//     address: req.body.address,
+//     city: req.body.city,
+//     zipcode: req.body.zipcode,
+//     password: req.body.password,
+//     newpassword: req.body.newpassword
+//   });
+//
+//   User.updateUser(updateUser, (err, user) => {
+//     if (err) {
+//       res.json({success: false, msg: 'Failed to update user'});
+//     } else {
+//       res.json({success: true, msg: 'User updated'});
+//     }
+//   });
+// });
+
 router.post('/authenticate', (req, res, next) => {
   const username = req.body.username;
   const password = req.body.password;

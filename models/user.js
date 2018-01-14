@@ -21,6 +21,19 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true
   }
+  // ,
+  // address: {
+  //   type: String
+  // },
+  // city: {
+  //   type: String
+  // },
+  // zipcode: {
+  //   type: Number
+  // },
+  // newpassword: {
+  //   type: String
+  // }
 });
 
 const User = module.exports = mongoose.model('User', userSchema);
@@ -45,6 +58,10 @@ module.exports.addUser = function(newUser, callback) {
     });
   });
 }
+
+// module.exports.updateUser = function(existingUser, callback) {
+//   existingUser.save(callback);
+// }
 
 module.exports.comparePassword = function(candidatePassword, hash, callback) {
   bcrypt.compare(candidatePassword, hash, (err, isMatch) => {
