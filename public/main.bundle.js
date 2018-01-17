@@ -109,11 +109,12 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_contactform_create_contactform_create_component__ = __webpack_require__("../../../../../src/app/components/contactform-create/contactform-create.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_account_update_id_account_update_id_component__ = __webpack_require__("../../../../../src/app/components/account-update-id/account-update-id.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_account_delete_id_account_delete_id_component__ = __webpack_require__("../../../../../src/app/components/account-delete-id/account-delete-id.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/module/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_33_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_purchase_plan_purchase_plan_component__ = __webpack_require__("../../../../../src/app/components/purchase-plan/purchase-plan.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/module/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_34_angular2_flash_messages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -155,22 +156,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__["a" /* RegisterComponent */] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__["a" /* LoginComponent */] },
-    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
     { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_12__components_contact_contact_component__["a" /* ContactComponent */] },
-    { path: 'pricing', component: __WEBPACK_IMPORTED_MODULE_13__components_pricing_pricing_component__["a" /* PricingComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'platinumplan', component: __WEBPACK_IMPORTED_MODULE_14__components_platinumplan_platinumplan_component__["a" /* PlatinumplanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'goldplan', component: __WEBPACK_IMPORTED_MODULE_15__components_goldplan_goldplan_component__["a" /* GoldplanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'silverplan', component: __WEBPACK_IMPORTED_MODULE_16__components_silverplan_silverplan_component__["a" /* SilverplanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'bronzeplan', component: __WEBPACK_IMPORTED_MODULE_17__components_bronzeplan_bronzeplan_component__["a" /* BronzeplanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'cart', component: __WEBPACK_IMPORTED_MODULE_18__components_cart_cart_component__["a" /* CartComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'messages', component: __WEBPACK_IMPORTED_MODULE_19__components_messages_messages_component__["a" /* MessagesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'settings', component: __WEBPACK_IMPORTED_MODULE_20__components_settings_settings_component__["a" /* SettingsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'notes', component: __WEBPACK_IMPORTED_MODULE_21__components_notes_notes_component__["a" /* NotesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'pricing', component: __WEBPACK_IMPORTED_MODULE_13__components_pricing_pricing_component__["a" /* PricingComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'platinumplan', component: __WEBPACK_IMPORTED_MODULE_14__components_platinumplan_platinumplan_component__["a" /* PlatinumplanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'goldplan', component: __WEBPACK_IMPORTED_MODULE_15__components_goldplan_goldplan_component__["a" /* GoldplanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'silverplan', component: __WEBPACK_IMPORTED_MODULE_16__components_silverplan_silverplan_component__["a" /* SilverplanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'bronzeplan', component: __WEBPACK_IMPORTED_MODULE_17__components_bronzeplan_bronzeplan_component__["a" /* BronzeplanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'cart', component: __WEBPACK_IMPORTED_MODULE_18__components_cart_cart_component__["a" /* CartComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'messages', component: __WEBPACK_IMPORTED_MODULE_19__components_messages_messages_component__["a" /* MessagesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'settings', component: __WEBPACK_IMPORTED_MODULE_20__components_settings_settings_component__["a" /* SettingsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'notes', component: __WEBPACK_IMPORTED_MODULE_21__components_notes_notes_component__["a" /* NotesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
     { path: 'apidocs', component: __WEBPACK_IMPORTED_MODULE_22__components_apidocs_apidocs_component__["a" /* ApidocsComponent */] },
     { path: 'account-show', component: __WEBPACK_IMPORTED_MODULE_23__components_account_show_account_show_component__["a" /* AccountShowComponent */] },
     { path: 'account-show-id', component: __WEBPACK_IMPORTED_MODULE_24__components_account_show_id_account_show_id_component__["a" /* AccountShowIdComponent */] },
@@ -180,6 +182,7 @@ var appRoutes = [
     { path: 'contactform-create', component: __WEBPACK_IMPORTED_MODULE_28__components_contactform_create_contactform_create_component__["a" /* ContactformCreateComponent */] },
     { path: 'account-update-id', component: __WEBPACK_IMPORTED_MODULE_29__components_account_update_id_account_update_id_component__["a" /* AccountUpdateIdComponent */] },
     { path: 'account-delete-id', component: __WEBPACK_IMPORTED_MODULE_30__components_account_delete_id_account_delete_id_component__["a" /* AccountDeleteIdComponent */] },
+    { path: 'purchase-plan', component: __WEBPACK_IMPORTED_MODULE_31__components_purchase_plan_purchase_plan_component__["a" /* PurchasePlanComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]] },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */] }
 ];
 var AppModule = /** @class */ (function () {
@@ -213,16 +216,17 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_27__components_account_create_account_create_component__["a" /* AccountCreateComponent */],
                 __WEBPACK_IMPORTED_MODULE_28__components_contactform_create_contactform_create_component__["a" /* ContactformCreateComponent */],
                 __WEBPACK_IMPORTED_MODULE_29__components_account_update_id_account_update_id_component__["a" /* AccountUpdateIdComponent */],
-                __WEBPACK_IMPORTED_MODULE_30__components_account_delete_id_account_delete_id_component__["a" /* AccountDeleteIdComponent */]
+                __WEBPACK_IMPORTED_MODULE_30__components_account_delete_id_account_delete_id_component__["a" /* AccountDeleteIdComponent */],
+                __WEBPACK_IMPORTED_MODULE_31__components_purchase_plan_purchase_plan_component__["a" /* PurchasePlanComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
                 __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_33_angular2_flash_messages__["FlashMessagesModule"].forRoot()
+                __WEBPACK_IMPORTED_MODULE_34_angular2_flash_messages__["FlashMessagesModule"].forRoot()
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_31__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_32__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_32__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_33__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -559,7 +563,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/apidocs/apidocs.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-3\">\n        <ul class=\"nav nav-pills nav-stacked admin-menu\">\n          <li><b>GET</b></li>\n          <li><a [routerLink]=\"['/account-show']\" id=\"acc-show\">account/show</a></li>\n          <li><a [routerLink]=\"['/']\" id=\"acc-show-id\">account/show/:id</a></li>\n          <li><a [routerLink]=\"['/']\" id=\"cont-show\">contactform/show</a></li>\n          <li><a [routerLink]=\"['/']\" id=\"cont-show-id\">contactform/show/:id</a></li>\n          <li><b>POST</b></li>\n          <li><a [routerLink]=\"['/']\" id=\"acc-create\">account/create</a></li>\n          <li><a [routerLink]=\"['/']\" id=\"cont-create\">contactform/create</a></li>\n          <li><b>PATCH</b></li>\n          <li><a [routerLink]=\"['/']\" id=\"acc-upt\">account/update/:id</a></li>\n          <li><b>DELETE</b></li>\n          <li><a [routerLink]=\"['/']\" id=\"acc-del\">account/delete/:id</a></li>\n        </ul>\n      </div>\n      <div class=\"col-md-9 well admin-content\">\n        <div class=\"jumbotron\">\n          <h2>REST API Docs</h2>\n          <p>Browse through the list on the left for desired API calls</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</body>\n"
+module.exports = "<body>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-3\">\n        <ul class=\"nav nav-pills nav-stacked admin-menu\">\n          <li><b>GET</b></li>\n          <li><a [routerLink]=\"['/account-show']\" id=\"acc-show\">account/show</a></li>\n          <li><a [routerLink]=\"['/']\" id=\"acc-show-id\">account/show/:id</a></li>\n          <li><a [routerLink]=\"['/']\" id=\"cont-show\">contactform/show</a></li>\n          <li><a [routerLink]=\"['/contactform-show-id']\" id=\"cont-show-id\">contactform/show/:id</a></li>\n          <li><b>POST</b></li>\n          <li><a [routerLink]=\"['/']\" id=\"acc-create\">account/create</a></li>\n          <li><a [routerLink]=\"['/contactform-create']\" id=\"cont-create\">contactform/create</a></li>\n          <li><b>PATCH</b></li>\n          <li><a [routerLink]=\"['/']\" id=\"acc-upt\">account/update/:id</a></li>\n          <li><b>DELETE</b></li>\n          <li><a [routerLink]=\"['/']\" id=\"acc-del\">account/delete/:id</a></li>\n        </ul>\n      </div>\n      <div class=\"col-md-9 well admin-content\">\n        <div class=\"jumbotron\">\n          <h2>REST API Docs</h2>\n          <p>Browse through the list on the left for desired API calls</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</body>\n"
 
 /***/ }),
 
@@ -607,7 +611,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".table>tbody>tr>td, .table>tfoot>tr>td{\n    vertical-align: middle;\n}\n@media screen and (max-width: 600px) {\n    table#cart tbody td .form-control{\n\t\twidth:20%;\n\t\tdisplay: inline !important;\n\t}\n\t.actions .btn{\n\t\twidth:36%;\n\t\tmargin:1.5em 0;\n\t}\n\n\t.actions .btn-info{\n\t\tfloat:left;\n\t}\n\t.actions .btn-danger{\n\t\tfloat:right;\n\t}\n\n\ttable#cart thead { display: none; }\n\ttable#cart tbody td { display: block; padding: .6rem; min-width:320px;}\n\ttable#cart tbody tr td:first-child { background: #333; color: #fff; }\n\ttable#cart tbody td:before {\n\t\tcontent: attr(data-th); font-weight: bold;\n\t\tdisplay: inline-block; width: 8rem;\n\t}\n\n\n\n\ttable#cart tfoot td{display:block; }\n\ttable#cart tfoot td .btn{display:block;}\n\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -620,7 +624,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/bronzeplan/bronzeplan.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n\t<div class=\"container\">\n\t<table id=\"cart\" class=\"table table-hover table-condensed\">\n    \t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th style=\"width:50%\">Product</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\">Price</th>\n\t\t\t\t\t\t\t<th style=\"width:8%\">Quantity</th>\n\t\t\t\t\t\t\t<th style=\"width:22%\" class=\"text-center\">Subtotal</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\"></th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td data-th=\"Product\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-2 hidden-xs\"><img src=\"http://placehold.it/100x100\" alt=\"...\" class=\"img-responsive\"/></div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"nomargin\">Bronze</h4>\n\t\t\t\t\t\t\t\t\t\t<p>Bronze provides you 5 projects</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td data-th=\"Price\">$0.00</td>\n\t\t\t\t\t\t\t<td data-th=\"Quantity\">\n\t\t\t\t\t\t\t\t<input type=\"number\" class=\"form-control text-center\" value=\"1\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td data-th=\"Subtotal\" class=\"text-center\">0.00</td>\n\t\t\t\t\t\t\t<td class=\"actions\" data-th=\"\">\n\t\t\t\t\t\t\t\t<a href=\"\"><button class=\"btn btn-info btn-sm\"><i class=\"glyphicon glyphicon-refresh\"></i></button></a>\n\t\t\t\t\t\t\t\t<button class=\"btn btn-danger btn-sm\"><i class=\"glyphicon glyphicon-trash\"></i></button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t\t<tfoot>\n\t\t\t\t\t\t<tr class=\"visible-xs\">\n\t\t\t\t\t\t\t<td class=\"text-center\"><strong>Total 0.00</strong></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td><a [routerLink]=\"['/pricing']\" class=\"btn btn-warning\"><i class=\"fa fa-angle-left\"></i> Go Back</a></td>\n\t\t\t\t\t\t\t<td colspan=\"2\" class=\"hidden-xs\"></td>\n\t\t\t\t\t\t\t<td class=\"hidden-xs text-center\"><strong>Total $0.00</strong></td>\n\t\t\t\t\t\t\t<td><a [routerLink]=\"['/cart']\" class=\"btn btn-success btn-block\">Cart <i class=\"fa fa-angle-right\"></i></a></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tfoot>\n\t\t\t\t</table>\n\t</div>\n</body>\n"
+module.exports = "<body>\n\t<div class=\"container\">\n\t\t<div class=\"jumbotron\">\n\t\t<table id=\"cart\" class=\"table table-hover table-condensed\">\n    \t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th style=\"width:100%\">Product</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\"></th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td data-th=\"Product\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-2 hidden-xs\"><img src=\"http://placehold.it/100x100\" alt=\"...\" class=\"img-responsive\"/></div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10\">\n\t\t\t\t\t\t\t\t\t\t<p>Bronze provides you 5 projects, you won't be charged</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t\t<tfoot>\n\t\t\t\t\t\t<tr class=\"visible-xs\">\n\t\t\t\t\t\t\t<td class=\"text-center\"><strong>Total 0.00</strong></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td><a id=\"goback\" [routerLink]=\"['/pricing']\" class=\"btn btn-warning\"><i class=\"fa fa-angle-left\"></i> Go Back</a></td>\n\t\t\t\t\t\t\t<td colspan=\"2\" class=\"hidden-xs\"></td>\n\t\t\t\t\t\t\t<td class=\"hidden-xs text-center\"><strong>Total $0.00</strong></td>\n\t\t\t\t\t\t\t<td><a id=\"purchase\" [routerLink]=\"['/purchase-plan']\" class=\"btn btn-success btn-block\">Purchase <i class=\"fa fa-angle-right\"></i></a></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tfoot>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n"
 
 /***/ }),
 
@@ -668,7 +672,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -681,7 +685,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/cart/cart.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n  <p>\n  cart works!\n  </p>\n</body>\n"
+module.exports = "<body>\n\n</body>\n"
 
 /***/ }),
 
@@ -841,7 +845,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/contactform-create/contactform-create.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  contactform-create works!\n</p>\n"
+module.exports = ""
 
 /***/ }),
 
@@ -902,7 +906,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/contactform-show-id/contactform-show-id.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  contactform-show-id works!\n</p>\n"
+module.exports = ""
 
 /***/ }),
 
@@ -1024,7 +1028,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n  <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-sm-3 col-md-2 sidebar\">\n          <ul class=\"nav nav-sidebar\">\n            <li class=\"active\"><a [routerLink]=\"['/dashboard']\">Overview <span class=\"sr-only\">(current)</span></a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Reports</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Analytics</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Export</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/notes']\">Notes</a></li>\n            <li><a [routerLink]=\"['/messages']\">Messages</a></li>\n            <li><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li><a [routerLink]=\"['/settings']\">Settings</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li id=\"logout\" *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main\">\n          <h1 class=\"page-header\">Dashboard</h1>\n\n          <div class=\"row placeholders\">\n            <div class=\"col-xs-6 col-sm-3 placeholder\">\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"200\" height=\"200\" class=\"img-responsive\" alt=\"Generic placeholder thumbnail\">\n              <h4>Label</h4>\n              <span class=\"text-muted\">Something else</span>\n            </div>\n            <div class=\"col-xs-6 col-sm-3 placeholder\">\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"200\" height=\"200\" class=\"img-responsive\" alt=\"Generic placeholder thumbnail\">\n              <h4>Label</h4>\n              <span class=\"text-muted\">Something else</span>\n            </div>\n            <div class=\"col-xs-6 col-sm-3 placeholder\">\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"200\" height=\"200\" class=\"img-responsive\" alt=\"Generic placeholder thumbnail\">\n              <h4>Label</h4>\n              <span class=\"text-muted\">Something else</span>\n            </div>\n            <div class=\"col-xs-6 col-sm-3 placeholder\">\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"200\" height=\"200\" class=\"img-responsive\" alt=\"Generic placeholder thumbnail\">\n              <h4>Label</h4>\n              <span class=\"text-muted\">Something else</span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n"
+module.exports = "<body>\n  <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-sm-3 col-md-2 sidebar\">\n          <ul class=\"nav nav-sidebar\">\n            <li class=\"active\"><a [routerLink]=\"['/dashboard']\"> Overview <span class=\"sr-only\">(current)</span></a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Reports</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Analytics</a></li>\n            <li><a [routerLink]=\"['/your-plans']\">Your Plans</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/notes']\">Notes</a></li>\n            <li><a [routerLink]=\"['/messages']\">Messages</a></li>\n            <li><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li><a [routerLink]=\"['/settings']\">Settings</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li id=\"logout\" *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main\">\n          <h1 class=\"page-header\">Dashboard</h1>\n\n          <div class=\"row placeholders\">\n            <div class=\"col-xs-6 col-sm-3 placeholder\">\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"200\" height=\"200\" class=\"img-responsive\" alt=\"Generic placeholder thumbnail\">\n              <h4>Label</h4>\n              <span class=\"text-muted\">Something else</span>\n            </div>\n            <div class=\"col-xs-6 col-sm-3 placeholder\">\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"200\" height=\"200\" class=\"img-responsive\" alt=\"Generic placeholder thumbnail\">\n              <h4>Label</h4>\n              <span class=\"text-muted\">Something else</span>\n            </div>\n            <div class=\"col-xs-6 col-sm-3 placeholder\">\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"200\" height=\"200\" class=\"img-responsive\" alt=\"Generic placeholder thumbnail\">\n              <h4>Label</h4>\n              <span class=\"text-muted\">Something else</span>\n            </div>\n            <div class=\"col-xs-6 col-sm-3 placeholder\">\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"200\" height=\"200\" class=\"img-responsive\" alt=\"Generic placeholder thumbnail\">\n              <h4>Label</h4>\n              <span class=\"text-muted\">Something else</span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n"
 
 /***/ }),
 
@@ -1093,7 +1097,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".table>tbody>tr>td, .table>tfoot>tr>td{\n    vertical-align: middle;\n}\n@media screen and (max-width: 600px) {\n    table#cart tbody td .form-control{\n\t\twidth:20%;\n\t\tdisplay: inline !important;\n\t}\n\t.actions .btn{\n\t\twidth:36%;\n\t\tmargin:1.5em 0;\n\t}\n\n\t.actions .btn-info{\n\t\tfloat:left;\n\t}\n\t.actions .btn-danger{\n\t\tfloat:right;\n\t}\n\n\ttable#cart thead { display: none; }\n\ttable#cart tbody td { display: block; padding: .6rem; min-width:320px;}\n\ttable#cart tbody tr td:first-child { background: #333; color: #fff; }\n\ttable#cart tbody td:before {\n\t\tcontent: attr(data-th); font-weight: bold;\n\t\tdisplay: inline-block; width: 8rem;\n\t}\n\n\n\n\ttable#cart tfoot td{display:block; }\n\ttable#cart tfoot td .btn{display:block;}\n\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -1106,7 +1110,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/goldplan/goldplan.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n\t<div class=\"container\">\n\t\t<table id=\"cart\" class=\"table table-hover table-condensed\">\n    \t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th style=\"width:50%\">Product</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\">Price</th>\n\t\t\t\t\t\t\t<th style=\"width:8%\">Quantity</th>\n\t\t\t\t\t\t\t<th style=\"width:22%\" class=\"text-center\">Subtotal</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\"></th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td data-th=\"Product\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-2 hidden-xs\"><img src=\"http://placehold.it/100x100\" alt=\"...\" class=\"img-responsive\"/></div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"nomargin\">Gold</h4>\n\t\t\t\t\t\t\t\t\t\t<p>Gold provides you 30 projects, you will be charged monthly</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td data-th=\"Price\">$10.00</td>\n\t\t\t\t\t\t\t<td data-th=\"Quantity\">\n\t\t\t\t\t\t\t\t<input type=\"number\" class=\"form-control text-center\" value=\"1\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td data-th=\"Subtotal\" class=\"text-center\">10.00</td>\n\t\t\t\t\t\t\t<td class=\"actions\" data-th=\"\">\n\t\t\t\t\t\t\t\t<a href=\"\"><button class=\"btn btn-info btn-sm\"><i class=\"glyphicon glyphicon-refresh\"></i></button></a>\n\t\t\t\t\t\t\t\t<button class=\"btn btn-danger btn-sm\"><i class=\"glyphicon glyphicon-trash\"></i></button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t\t<tfoot>\n\t\t\t\t\t\t<tr class=\"visible-xs\">\n\t\t\t\t\t\t\t<td class=\"text-center\"><strong>Total 10.00</strong></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td><a [routerLink]=\"['/pricing']\" class=\"btn btn-warning\"><i class=\"fa fa-angle-left\"></i> Go Back</a></td>\n\t\t\t\t\t\t\t<td colspan=\"2\" class=\"hidden-xs\"></td>\n\t\t\t\t\t\t\t<td class=\"hidden-xs text-center\"><strong>Total $10.00</strong></td>\n\t\t\t\t\t\t\t<td><a [routerLink]=\"['/cart']\" class=\"btn btn-success btn-block\">Cart <i class=\"fa fa-angle-right\"></i></a></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tfoot>\n\t\t\t\t</table>\n\t\t</div>\n\t</body>\n"
+module.exports = "<body>\n\t<div class=\"container\">\n\t\t<div class=\"jumbotron\">\n\t\t<table id=\"cart\" class=\"table table-hover table-condensed\">\n    \t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th style=\"width:100%\">Product</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\"></th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td data-th=\"Product\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-2 hidden-xs\"><img src=\"http://placehold.it/100x100\" alt=\"...\" class=\"img-responsive\"/></div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10\">\n\t\t\t\t\t\t\t\t\t\t<p>Gold provides you 30 projects, you will be charged monthly</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t\t<tfoot>\n\t\t\t\t\t\t<tr class=\"visible-xs\">\n\t\t\t\t\t\t\t<td class=\"text-center\"><strong>Total 10.00</strong></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td><a id=\"goback\" [routerLink]=\"['/pricing']\" class=\"btn btn-warning\"><i class=\"fa fa-angle-left\"></i> Go Back</a></td>\n\t\t\t\t\t\t\t<td colspan=\"2\" class=\"hidden-xs\"></td>\n\t\t\t\t\t\t\t<td class=\"hidden-xs text-center\"><strong>Total $10.00</strong></td>\n\t\t\t\t\t\t\t<td><a id=\"purchase\" [routerLink]=\"['/purchase-plan']\" class=\"btn btn-success btn-block\">Purchase <i class=\"fa fa-angle-right\"></i></a></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tfoot>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n"
 
 /***/ }),
 
@@ -1322,7 +1326,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/messages/messages.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n  <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-sm-3 col-md-2 sidebar\">\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/dashboard']\">Overview <span class=\"sr-only\">(current)</span></a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Reports</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Analytics</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Export</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/notes']\">Notes</a></li>\n            <li class=\"active\"><a [routerLink]=\"['/messages']\">Messages</a></li>\n            <li><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li><a [routerLink]=\"['/settings']\">Settings</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main\">\n          <h1 class=\"page-header\">Messages</h1>\n\n        </div>\n      </div>\n    </div>\n  </body>\n"
+module.exports = "<body>\n  <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-sm-3 col-md-2 sidebar\">\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/dashboard']\">Overview <span class=\"sr-only\">(current)</span></a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Reports</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Analytics</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Your Plans</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/notes']\">Notes</a></li>\n            <li class=\"active\"><a [routerLink]=\"['/messages']\">Messages</a></li>\n            <li><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li><a [routerLink]=\"['/settings']\">Settings</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main\">\n          <h1 class=\"page-header\">Messages</h1>\n\n        </div>\n      </div>\n    </div>\n  </body>\n"
 
 /***/ }),
 
@@ -1452,7 +1456,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/*\n * Base structure\n */\n\n/*\n * Global add-ons\n */\n\n.sub-header {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eee;\n}\n\n/*\n * Top navigation\n * Hide default border to remove 1px line.\n */\n\n.navbar-fixed-top {\n  border: 0;\n}\n\n/*\n * Sidebar\n */\n\n@media (min-width: 768px) {\n  .sidebar {\n    position: fixed;\n    top: 51px;\n    bottom: 0;\n    left: 0;\n    z-index: 1000;\n    display: block;\n    padding: 20px;\n    overflow-x: hidden;\n    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */\n    background-color: #f5f5f5;\n    border-right: 1px solid #eee;\n  }\n}\n\n/* Sidebar navigation */\n\n.nav-sidebar {\n  margin-right: -21px; /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px;\n}\n\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px;\n}\n\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca;\n}\n\n/*\n * Main content\n */\n\n.main {\n  padding: 20px;\n}\n\n@media (min-width: 768px) {\n  .main {\n    padding-right: 40px;\n    padding-left: 40px;\n  }\n}\n\n.main .page-header {\n  margin-top: 0;\n}\n\n/*\n * Placeholder dashboard ideas\n */\n\n.placeholders {\n  margin-bottom: 30px;\n  text-align: center;\n}\n\n.placeholders h4 {\n  margin-bottom: 0;\n}\n\n.placeholder {\n  margin-bottom: 20px;\n}\n\n.placeholder img {\n  display: inline-block;\n  border-radius: 50%;\n}\n", ""]);
+exports.push([module.i, "/*\n * Base structure\n */\n\n/*\n * Global add-ons\n */\n\n.sub-header {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eee;\n}\n\n/*\n * Top navigation\n * Hide default border to remove 1px line.\n */\n\n.navbar-fixed-top {\n  border: 0;\n}\n\n/*\n * Sidebar\n */\n\n@media (min-width: 768px) {\n  .sidebar {\n    position: fixed;\n    top: 51px;\n    bottom: 0;\n    left: 0;\n    z-index: 1000;\n    display: block;\n    padding: 20px;\n    overflow-x: hidden;\n    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */\n    background-color: #f5f5f5;\n    border-right: 1px solid #eee;\n  }\n}\n\n/* Sidebar navigation */\n\n.nav-sidebar {\n  margin-right: -21px; /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px;\n}\n\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px;\n}\n\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca;\n}\n\n/*\n * Main content\n */\n\n.main {\n  padding: 20px;\n}\n\n@media (min-width: 768px) {\n  .main {\n    padding-right: 40px;\n    padding-left: 40px;\n  }\n}\n\n.main .page-header {\n  margin-top: 0;\n}\n\n/*\n * Placeholder dashboard ideas\n */\n\n.placeholders {\n  margin-bottom: 30px;\n  text-align: center;\n}\n\n.placeholders h4 {\n  margin-bottom: 0;\n}\n\n.placeholder {\n  margin-bottom: 20px;\n}\n\n.placeholder img {\n  display: inline-block;\n  border-radius: 50%;\n}\n\n#content {\n  display: none;\n}\n\ninput:checked ~ #content {\n  display: block;\n}\n\n.deleted-checkbox:checked ~ :not(.todo) {\n    display: none !important;\n}\n", ""]);
 
 // exports
 
@@ -1465,7 +1469,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/notes/notes.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n  <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-sm-3 col-md-2 sidebar\">\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/dashboard']\">Overview <span class=\"sr-only\">(current)</span></a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Reports</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Analytics</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Export</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li class=\"active\"><a [routerLink]=\"['/notes']\">Notes</a></li>\n            <li><a [routerLink]=\"['/messages']\">Messages</a></li>\n            <li><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li><a [routerLink]=\"['/settings']\">Settings</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main\">\n          <h1 class=\"page-header\">Notes</h1>\n\n        </div>\n      </div>\n    </div>\n  </body>\n"
+module.exports = "<body>\n  <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-sm-3 col-md-2 sidebar\">\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/dashboard']\">Overview <span class=\"sr-only\">(current)</span></a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Reports</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Analytics</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Your Plans</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li class=\"active\"><a [routerLink]=\"['/notes']\">Notes</a></li>\n            <li><a [routerLink]=\"['/messages']\">Messages</a></li>\n            <li><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li><a [routerLink]=\"['/settings']\">Settings</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main\">\n          <h1 class=\"page-header\">Notes</h1>\n          <!-- Toggle Content: <input type=\"checkbox\">\n          <div id=\"content\">\n            Hello world!\n          </div> -->\n\n          <input type=\"checkbox\" id=\"toggle-box\">\n<label for=\"toggle-box\">Toggle!</label>\n<div id=\"content\">\n  Hello world!\n</div>\n\n<input type=\"checkbox\" class=\"deleted-checkbox\" id=\"deleted-checkbox-3\">\n<label for=\"deleted-checkbox-3\" class=\"deleted-checkbox-label\">×</label>\n        </div>\n      </div>\n    </div>\n  </body>\n"
 
 /***/ }),
 
@@ -1513,7 +1517,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".table>tbody>tr>td, .table>tfoot>tr>td{\n    vertical-align: middle;\n}\n@media screen and (max-width: 600px) {\n    table#cart tbody td .form-control{\n\t\twidth:20%;\n\t\tdisplay: inline !important;\n\t}\n\t.actions .btn{\n\t\twidth:36%;\n\t\tmargin:1.5em 0;\n\t}\n\n\t.actions .btn-info{\n\t\tfloat:left;\n\t}\n\t.actions .btn-danger{\n\t\tfloat:right;\n\t}\n\n\ttable#cart thead { display: none; }\n\ttable#cart tbody td { display: block; padding: .6rem; min-width:320px;}\n\ttable#cart tbody tr td:first-child { background: #333; color: #fff; }\n\ttable#cart tbody td:before {\n\t\tcontent: attr(data-th); font-weight: bold;\n\t\tdisplay: inline-block; width: 8rem;\n\t}\n\n\n\n\ttable#cart tfoot td{display:block; }\n\ttable#cart tfoot td .btn{display:block;}\n\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -1526,7 +1530,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/platinumplan/platinumplan.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n\t<div class=\"container\">\n\t\t<table id=\"cart\" class=\"table table-hover table-condensed\">\n    \t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th style=\"width:50%\">Product</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\">Price</th>\n\t\t\t\t\t\t\t<th style=\"width:8%\">Quantity</th>\n\t\t\t\t\t\t\t<th style=\"width:22%\" class=\"text-center\">Subtotal</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\"></th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td data-th=\"Product\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-2 hidden-xs\"><img src=\"http://placehold.it/100x100\" alt=\"...\" class=\"img-responsive\"/></div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10\">\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"nomargin\">Platinum</h4>\n\t\t\t\t\t\t\t\t\t\t<p>Platinum provides you unlimited projects, you will be charged monthly</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td data-th=\"Price\">$20.00</td>\n\t\t\t\t\t\t\t<td data-th=\"Quantity\">\n\t\t\t\t\t\t\t\t<input type=\"number\" class=\"form-control text-center\" value=\"1\">\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td data-th=\"Subtotal\" class=\"text-center\">20.00</td>\n\t\t\t\t\t\t\t<td class=\"actions\" data-th=\"\">\n\t\t\t\t\t\t\t\t<a href=\"\"><button class=\"btn btn-info btn-sm\"><i class=\"glyphicon glyphicon-refresh\"></i></button></a>\n\t\t\t\t\t\t\t\t<button class=\"btn btn-danger btn-sm\"><i class=\"glyphicon glyphicon-trash\"></i></button>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t\t<tfoot>\n\t\t\t\t\t\t<tr class=\"visible-xs\">\n\t\t\t\t\t\t\t<td class=\"text-center\"><strong>Total 20.00</strong></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td><a [routerLink]=\"['/pricing']\" class=\"btn btn-warning\"><i class=\"fa fa-angle-left\"></i> Go Back</a></td>\n\t\t\t\t\t\t\t<td colspan=\"2\" class=\"hidden-xs\"></td>\n\t\t\t\t\t\t\t<td class=\"hidden-xs text-center\"><strong>Total $20.00</strong></td>\n\t\t\t\t\t\t\t<td><a [routerLink]=\"['/cart']\" class=\"btn btn-success btn-block\">Cart <i class=\"fa fa-angle-right\"></i></a></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tfoot>\n\t\t\t\t</table>\n\t\t\t</div>\n\t</body>\n"
+module.exports = "<body>\n\t<div class=\"container\">\n\t\t<div class=\"jumbotron\">\n\t\t<table id=\"cart\" class=\"table table-hover table-condensed\">\n    \t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th style=\"width:100%\">Product</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\"></th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td data-th=\"Product\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-2 hidden-xs\"><img src=\"http://placehold.it/100x100\" alt=\"...\" class=\"img-responsive\"/></div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10\">\n\t\t\t\t\t\t\t\t\t\t<p>Platinum provides you unlimited projects, you will be charged monthly</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t\t<tfoot>\n\t\t\t\t\t\t<tr class=\"visible-xs\">\n\t\t\t\t\t\t\t<td class=\"text-center\"><strong>Total 20.00</strong></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td><a id=\"goback\" [routerLink]=\"['/pricing']\" class=\"btn btn-warning\"><i class=\"fa fa-angle-left\"></i> Go Back</a></td>\n\t\t\t\t\t\t\t<td colspan=\"2\" class=\"hidden-xs\"></td>\n\t\t\t\t\t\t\t<td class=\"hidden-xs text-center\"><strong>Total $20.00</strong></td>\n\t\t\t\t\t\t\t<td><a id=\"purchase\" [routerLink]=\"['/purchase-plan']\" class=\"btn btn-success btn-block\">Purchase <i class=\"fa fa-angle-right\"></i></a></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tfoot>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n"
 
 /***/ }),
 
@@ -1587,7 +1591,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/pricing/pricing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"panel price panel-red\">\n\t\t\t\t\t<div class=\"panel-heading  text-center\">\n\t\t\t\t\t\t<h3>PLATINUM</h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body text-center\">\n\t\t\t\t\t\t<p class=\"lead\" style=\"font-size:40px\"><strong>$20 / month</strong></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"list-group list-group-flush text-center\">\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Personal use</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Unlimited projects</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 27/7 support</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<div class=\"panel-footer\">\n\t\t\t\t\t\t<a class=\"btn btn-lg btn-block btn-danger\" [routerLink]=\"['/platinumplan']\">BUY NOW!</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n\n\t\t\t\t<div class=\"panel price panel-blue\">\n\t\t\t\t\t<div class=\"panel-heading arrow_box text-center\">\n\t\t\t\t\t\t<h3>GOLD</h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body text-center\">\n\t\t\t\t\t\t<p class=\"lead\" style=\"font-size:40px\"><strong>$10 / month</strong></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"list-group list-group-flush text-center\">\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-info\"></i> Personal use</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-info\"></i> 30 projects</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-info\"></i> 27/7 support</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<div class=\"panel-footer\">\n\t\t\t\t\t\t<a class=\"btn btn-lg btn-block btn-info\" [routerLink]=\"['/goldplan']\">BUY NOW!</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n\n\t\t\t\t<div class=\"panel price panel-green\">\n\t\t\t\t\t<div class=\"panel-heading arrow_box text-center\">\n\t\t\t\t\t\t<h3>SILVER</h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body text-center\">\n\t\t\t\t\t\t<p class=\"lead\" style=\"font-size:40px\"><strong>$5 / month</strong></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"list-group list-group-flush text-center\">\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> Personal use</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> 10 projects</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> 27/7 support</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<div class=\"panel-footer\">\n\t\t\t\t\t\t<a class=\"btn btn-lg btn-block btn-success\" [routerLink]=\"['/silverplan']\">BUY NOW!</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n\n\t\t\t\t<div class=\"panel price panel-grey\">\n\t\t\t\t\t<div class=\"panel-heading arrow_box text-center\">\n\t\t\t\t\t\t<h3>BRONZE</h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body text-center\">\n\t\t\t\t\t\t<p class=\"lead\" style=\"font-size:40px\"><strong>$0 / month</strong></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"list-group list-group-flush text-center\">\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> Personal use</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> 5 projects</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> 27/7 support</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<div class=\"panel-footer\">\n\t\t\t\t\t\t<a class=\"btn btn-lg btn-block btn-primary\" [routerLink]=\"['/bronzeplan']\">BUY NOW!</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</body>\n"
+module.exports = "<body>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"panel price panel-red\">\n\t\t\t\t\t<div class=\"panel-heading  text-center\">\n\t\t\t\t\t\t<h3>PLATINUM</h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body text-center\">\n\t\t\t\t\t\t<p class=\"lead\" style=\"font-size:40px\"><strong>$20 / month</strong></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"list-group list-group-flush text-center\">\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Personal use</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> Unlimited projects</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-danger\"></i> 27/7 support</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<div class=\"panel-footer\">\n\t\t\t\t\t\t<a id=\"platinum\" class=\"btn btn-lg btn-block btn-danger\" [routerLink]=\"['/platinumplan']\">BUY NOW!</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n\n\t\t\t\t<div class=\"panel price panel-blue\">\n\t\t\t\t\t<div class=\"panel-heading arrow_box text-center\">\n\t\t\t\t\t\t<h3>GOLD</h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body text-center\">\n\t\t\t\t\t\t<p class=\"lead\" style=\"font-size:40px\"><strong>$10 / month</strong></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"list-group list-group-flush text-center\">\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-info\"></i> Personal use</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-info\"></i> 30 projects</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-info\"></i> 27/7 support</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<div class=\"panel-footer\">\n\t\t\t\t\t\t<a id=\"gold\" class=\"btn btn-lg btn-block btn-info\" [routerLink]=\"['/goldplan']\">BUY NOW!</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n\n\t\t\t\t<div class=\"panel price panel-green\">\n\t\t\t\t\t<div class=\"panel-heading arrow_box text-center\">\n\t\t\t\t\t\t<h3>SILVER</h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body text-center\">\n\t\t\t\t\t\t<p class=\"lead\" style=\"font-size:40px\"><strong>$5 / month</strong></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"list-group list-group-flush text-center\">\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> Personal use</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> 10 projects</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> 27/7 support</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<div class=\"panel-footer\">\n\t\t\t\t\t\t<a id=\"silver\" class=\"btn btn-lg btn-block btn-success\" [routerLink]=\"['/silverplan']\">BUY NOW!</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n\n\t\t\t\t<div class=\"panel price panel-grey\">\n\t\t\t\t\t<div class=\"panel-heading arrow_box text-center\">\n\t\t\t\t\t\t<h3>BRONZE</h3>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body text-center\">\n\t\t\t\t\t\t<p class=\"lead\" style=\"font-size:40px\"><strong>$0 / month</strong></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"list-group list-group-flush text-center\">\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> Personal use</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> 5 projects</li>\n\t\t\t\t\t\t<li class=\"list-group-item\"><i class=\"icon-ok text-success\"></i> 27/7 support</li>\n\t\t\t\t\t</ul>\n\t\t\t\t\t<div class=\"panel-footer\">\n\t\t\t\t\t\t<a id=\"bronze\" class=\"btn btn-lg btn-block btn-primary\" [routerLink]=\"['/bronzeplan']\">BUY NOW!</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</body>\n"
 
 /***/ }),
 
@@ -1713,6 +1717,122 @@ var ProfileComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]])
     ], ProfileComponent);
     return ProfileComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/purchase-plan/purchase-plan.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* images*/\nol, ul {\n  list-style: none;\n}\n.hand {\n  cursor: pointer;\n  cursor: pointer;\n}\n.cards{\n    padding-left:0;\n}\n.cards li {\n  -webkit-transition: all .2s;\n  transition: all .2s;\n  background-image: url('//c2.staticflickr.com/4/3713/20116660060_f1e51a5248_m.jpg');\n  background-position: 0 0;\n  float: left;\n  height: 32px;\n  margin-right: 8px;\n  text-indent: -9999px;\n  width: 51px;\n}\n.cards .mastercard {\n  background-position: -51px 0;\n}\n.cards li {\n  -webkit-transition: all .2s;\n  transition: all .2s;\n  background-image: url('//c2.staticflickr.com/4/3713/20116660060_f1e51a5248_m.jpg');\n  background-position: 0 0;\n  float: left;\n  height: 32px;\n  margin-right: 8px;\n  text-indent: -9999px;\n  width: 51px;\n}\n.cards .amex {\n  background-position: -102px 0;\n}\n.cards li {\n  -webkit-transition: all .2s;\n  transition: all .2s;\n  background-image: url('//c2.staticflickr.com/4/3713/20116660060_f1e51a5248_m.jpg');\n  background-position: 0 0;\n  float: left;\n  height: 32px;\n  margin-right: 8px;\n  text-indent: -9999px;\n  width: 51px;\n}\n.cards li:last-child {\n  margin-right: 0;\n}\n/* images end */\n#placeorder {\n  margin-top: 10px;\n}\n#cardimages {\n  margin-top: 10px;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/purchase-plan/purchase-plan.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<form (submit)=\"onPurchaseSubmit()\">\n<div class=\"panel panel-info\">\n  <div class=\"panel-heading\"><span><i class=\"glyphicon glyphicon-lock\"></i></span> Secure Payment</div>\n  <div class=\"panel-body\">\n    <div class=\"form-group\">\n      <div class=\"col-md-12\"><strong>Card Type:</strong></div>\n      <div class=\"col-md-12\">\n\n        <input [(ngModel)]=\"cardtype\" id=\"cardtype\" name=\"cardtype\" class=\"form-control\" placeholder=\"VISA\" readonly>\n\n        <!-- <select [(ngModel)]=\"cardtype\" id=\"cardtype\" name=\"cardtype\" class=\"form-control\">\n                                        <option value=\"5\">Visa</option>\n                                        <option value=\"6\">MasterCard</option>\n                                        <option value=\"7\">American Express</option>\n                                        <option value=\"8\">Discover</option>\n                                    </select> -->\n      </div>\n    </div>\n    <div class=\"form-group\">\n      <div class=\"col-md-12\"><strong>Credit Card Number:</strong></div>\n      <div class=\"col-md-12\"><input [(ngModel)]=\"cardnumber\" type=\"String\" class=\"form-control\" name=\"cardnumber\" id=\"cardnumber\"></div>\n    </div>\n    <div class=\"form-group\">\n      <div class=\"col-md-12\"><strong>Card CVV:</strong></div>\n      <div class=\"col-md-12\"><input [(ngModel)]=\"cardcvv\" type=\"number\" class=\"form-control\" name=\"cardcvv\" id=\"cardcvv\"></div>\n    </div>\n    <div class=\"form-group\">\n      <div class=\"col-md-12\">\n        <strong>Expiration Date</strong>\n      </div>\n      <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">\n\n        <!-- <div class=\"col-md-12\"><input [(ngModel)]=\"month\" type=\"number\" name=\"month\" id=\"month\" class=\"form-control\" placeholder=\"MM\"></div>\n        <div class=\"col-md-12\"><input [(ngModel)]=\"year\" type=\"number\" name=\"year\" id=\"year\" class=\"form-control\" placeholder=\"YYYY\"></div> -->\n\n        <select [(ngModel)]=\"month\" name=\"month\" id=\"month\" class=\"form-control\">\n                                        <option value=\"\">Month</option>\n                                        <option value=\"01\">01</option>\n                                        <option value=\"02\">02</option>\n                                        <option value=\"03\">03</option>\n                                        <option value=\"04\">04</option>\n                                        <option value=\"05\">05</option>\n                                        <option value=\"06\">06</option>\n                                        <option value=\"07\">07</option>\n                                        <option value=\"08\">08</option>\n                                        <option value=\"09\">09</option>\n                                        <option value=\"10\">10</option>\n                                        <option value=\"11\">11</option>\n                                        <option value=\"12\">12</option>\n                                </select>\n      </div>\n      <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">\n        <select [(ngModel)]=\"year\" name=\"year\" id=\"year\" class=\"form-control\">\n                                        <option value=\"\">Year</option>\n                                        <option value=\"2019\">2019</option>\n                                        <option value=\"2020\">2020</option>\n                                        <option value=\"2021\">2021</option>\n                                        <option value=\"2022\">2022</option>\n                                        <option value=\"2023\">2023</option>\n                                        <option value=\"2024\">2024</option>\n                                        <option value=\"2025\">2025</option>\n                                </select>\n      </div>\n    </div>\n    <div class=\"form-group\">\n      <!-- <div class=\"col-md-12\">\n        <span>Pay secure using your credit card.</span>\n      </div> -->\n      <div class=\"col-md-12\" id=\"cardimages\">\n        <ul class=\"cards\">\n          <li class=\"visa hand\">Visa</li>\n          <!-- <li class=\"mastercard hand\">MasterCard</li>\n          <li class=\"amex hand\">Amex</li> -->\n        </ul>\n        <div class=\"clearfix\"></div>\n      </div>\n    </div>\n    <div class=\"form-group\">\n      <div class=\"col-md-6 col-sm-6 col-xs-12\" id=\"placeorder\">\n        <button type=\"submit\" id=\"purchaseplan\" class=\"btn btn-primary btn-submit-fix\">Purchase Plan</button>\n      </div>\n    </div>\n  </div>\n</div>\n</form>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/purchase-plan/purchase-plan.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PurchasePlanComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/module/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var PurchasePlanComponent = /** @class */ (function () {
+    function PurchasePlanComponent(validateService, flashMessage, authService, router) {
+        this.validateService = validateService;
+        this.flashMessage = flashMessage;
+        this.authService = authService;
+        this.router = router;
+    }
+    PurchasePlanComponent.prototype.ngOnInit = function () {
+    };
+    PurchasePlanComponent.prototype.onPurchaseSubmit = function () {
+        var _this = this;
+        var card = {
+            cardnumber: this.cardnumber,
+            cardcvv: this.cardcvv,
+            month: this.month,
+            year: this.year
+        };
+        if (!this.validateService.validateCard(card)) {
+            this.flashMessage.show('Fill in all fields', { cssClass: 'alert-danger', timeout: 3000 });
+            return false;
+        }
+        if (!this.validateService.validateCreditCardNumber(card.cardnumber)) {
+            this.flashMessage.show('Type in a valid Credit Card Number', { cssClass: 'alert-danger', timeout: 3000 });
+            return false;
+        }
+        if (!this.validateService.validateCardCVV(card.cardcvv)) {
+            this.flashMessage.show('Type in a valid Card CVV', { cssClass: 'alert-danger', timeout: 3000 });
+            return false;
+        }
+        // if (!this.validateService.validateExpirationMonth(card.month)) {
+        //   this.flashMessage.show('Select valid month', {cssClass: 'alert-danger', timeout: 3000});
+        //   return false;
+        // }
+        // if (!this.validateService.validateExpirationYear(card.year)) {
+        //   this.flashMessage.show('Select valid year', {cssClass: 'alert-danger', timeout: 3000});
+        //   return false;
+        // }
+        this.authService.addCard(card).subscribe(function (data) {
+            if (data.success) {
+                _this.flashMessage.show(data.msg, { cssClass: 'alert-success', timeout: 3000 });
+                _this.router.navigate(['/dashboard']);
+            }
+            else {
+                _this.flashMessage.show('Something went wrong!', { cssClass: 'alert-danger', timeout: 3000 });
+                _this.router.navigate(['/purchase-plan']);
+            }
+        });
+    };
+    PurchasePlanComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-purchase-plan',
+            template: __webpack_require__("../../../../../src/app/components/purchase-plan/purchase-plan.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/purchase-plan/purchase-plan.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */],
+            __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"],
+            __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]])
+    ], PurchasePlanComponent);
+    return PurchasePlanComponent;
 }());
 
 
@@ -1847,7 +1967,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/settings/settings.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n  <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-sm-3 col-md-2 sidebar\">\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/dashboard']\">Overview <span class=\"sr-only\">(current)</span></a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Reports</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Analytics</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Export</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/notes']\">Notes</a></li>\n            <li><a [routerLink]=\"['/messages']\">Messages</a></li>\n            <li><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li class=\"active\"><a [routerLink]=\"['/settings']\">Settings</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main\">\n          <h1 class=\"page-header\">Settings</h1>\n\n        </div>\n      </div>\n    </div>\n  </body>\n"
+module.exports = "<body>\n  <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col-sm-3 col-md-2 sidebar\">\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/dashboard']\">Overview <span class=\"sr-only\">(current)</span></a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Reports</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Analytics</a></li>\n            <li><a [routerLink]=\"['/dashboard']\">Your Plans</a></li>\n          </ul>\n          <ul class=\"nav nav-sidebar\">\n            <li><a [routerLink]=\"['/notes']\">Notes</a></li>\n            <li><a [routerLink]=\"['/messages']\">Messages</a></li>\n            <li><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li class=\"active\"><a [routerLink]=\"['/settings']\">Settings</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main\">\n          <h1 class=\"page-header\">Settings</h1>\n\n        </div>\n      </div>\n    </div>\n  </body>\n"
 
 /***/ }),
 
@@ -1908,7 +2028,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/silverplan/silverplan.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n\t<div class=\"container\">\n\t\t<table id=\"cart\" class=\"table table-hover table-condensed\">\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<th style=\"width:50%\">Product</th>\n\t\t\t\t\t<th style=\"width:10%\">Price</th>\n\t\t\t\t\t<th style=\"width:8%\">Quantity</th>\n\t\t\t\t\t<th style=\"width:22%\" class=\"text-center\">Subtotal</th>\n\t\t\t\t\t<th style=\"width:10%\"></th>\n\t\t\t\t</tr>\n\t\t\t</thead>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td data-th=\"Product\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-sm-2 hidden-xs\"><img src=\"http://placehold.it/100x100\" alt=\"...\" class=\"img-responsive\" /></div>\n\t\t\t\t\t\t\t<div class=\"col-sm-10\">\n\t\t\t\t\t\t\t\t<h4 class=\"nomargin\">Silver</h4>\n\t\t\t\t\t\t\t\t<p>Platinum provides you 10 projects, you will be charged monthly</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td data-th=\"Price\">$5.00</td>\n\t\t\t\t\t<td data-th=\"Quantity\">\n\t\t\t\t\t\t<input type=\"number\" class=\"form-control text-center\" value=\"1\">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td data-th=\"Subtotal\" class=\"text-center\">5.00</td>\n\t\t\t\t\t<td class=\"actions\" data-th=\"\">\n\t\t\t\t\t\t<a href=\"\"><button class=\"btn btn-info btn-sm\"><i class=\"glyphicon glyphicon-refresh\"></i></button></a>\n\t\t\t\t\t\t<button class=\"btn btn-danger btn-sm\"><i class=\"glyphicon glyphicon-trash\"></i></button>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t\t<tfoot>\n\t\t\t\t<tr class=\"visible-xs\">\n\t\t\t\t\t<td class=\"text-center\"><strong>Total 5.00</strong></td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td><a [routerLink]=\"['/pricing']\" class=\"btn btn-warning\"><i class=\"fa fa-angle-left\"></i> Go Back</a></td>\n\t\t\t\t\t<td colspan=\"2\" class=\"hidden-xs\"></td>\n\t\t\t\t\t<td class=\"hidden-xs text-center\"><strong>Total $5.00</strong></td>\n\t\t\t\t\t<td><a [routerLink]=\"['/cart']\" class=\"btn btn-success btn-block\">Cart <i class=\"fa fa-angle-right\"></i></a></td>\n\t\t\t\t</tr>\n\t\t\t</tfoot>\n\t\t</table>\n\t</div>\n</body>\n"
+module.exports = "<body>\n\t<div class=\"container\">\n\t\t<div class=\"jumbotron\">\n\t\t<table id=\"cart\" class=\"table table-hover table-condensed\">\n    \t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th style=\"width:100%\">Product</th>\n\t\t\t\t\t\t\t<th style=\"width:10%\"></th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td data-th=\"Product\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-2 hidden-xs\"><img src=\"http://placehold.it/100x100\" alt=\"...\" class=\"img-responsive\"/></div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10\">\n\t\t\t\t\t\t\t\t\t\t<p>Silver provides you 10 projects, you will be charged monthly</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t\t<tfoot>\n\t\t\t\t\t\t<tr class=\"visible-xs\">\n\t\t\t\t\t\t\t<td class=\"text-center\"><strong>Total 5.00</strong></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<td><a id=\"goback\" [routerLink]=\"['/pricing']\" class=\"btn btn-warning\"><i class=\"fa fa-angle-left\"></i> Go Back</a></td>\n\t\t\t\t\t\t\t<td colspan=\"2\" class=\"hidden-xs\"></td>\n\t\t\t\t\t\t\t<td class=\"hidden-xs text-center\"><strong>Total $5.00</strong></td>\n\t\t\t\t\t\t\t<td><a id=\"purchase\" [routerLink]=\"['/purchase-plan']\" class=\"btn btn-success btn-block\">Purchase <i class=\"fa fa-angle-right\"></i></a></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tfoot>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n"
 
 /***/ }),
 
@@ -2033,6 +2153,12 @@ var AuthService = /** @class */ (function () {
     //   return this.http.put('http://localhost:3000/users/profile', user, {headers: headers})
     //     .map(res => res.json());
     // }
+    AuthService.prototype.addCard = function (card) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('http://localhost:3000/cards/purchase-plan', card, { headers: headers })
+            .map(function (res) { return res.json(); });
+    };
     AuthService.prototype.registerUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
@@ -2114,6 +2240,26 @@ var ValidateService = /** @class */ (function () {
     ValidateService.prototype.validateEmail = function (email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
+    };
+    ValidateService.prototype.validateCard = function (card) {
+        if (card.cardnumber == undefined || card.cardcvv == undefined || card.month == undefined || card.year == undefined) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
+    ValidateService.prototype.validateCreditCardNumber = function (card) {
+        var re = /^4(\d{3})(?!\1{3})([\ \-]?)(?!(\d)\3{3})(\d{4})\2(?!\4|(\d)\5{3}|1234|2345|3456|5678|7890)(\d{4})\2(?!\6|(\d)\7{3}|1234|3456)\d{4}$/;
+        return re.test(card);
+    };
+    ValidateService.prototype.validateCardCVV = function (card) {
+        var re = /^[0-9]{3,4}$/;
+        return re.test(card);
+    };
+    ValidateService.prototype.validateExpirationMonth = function (month) {
+    };
+    ValidateService.prototype.validateExpirationYear = function (year) {
     };
     ValidateService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),

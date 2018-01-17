@@ -21,6 +21,7 @@ const app = express();
 
 const users = require('./routes/users');
 const contacts = require('./routes/contacts');
+const cards = require('./routes/cards');
 
 const port = 3000;
 
@@ -40,6 +41,7 @@ require('./config/passport')(passport);
 
 app.use('/users', users);
 app.use('/contacts', contacts);
+app.use('/cards', cards);
 
 app.get('/', (req, res) => {
   res.send('Invalid Endpoint');
